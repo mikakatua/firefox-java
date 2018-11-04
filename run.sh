@@ -9,7 +9,7 @@ install() {
 }
 
 launch() {
-  docker run --rm -it \
+  docker run --rm -i \
   --net host \
   --env="DISPLAY" \
   --mount type=bind,source="$base_dir",target=/firefox \
