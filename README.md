@@ -1,7 +1,14 @@
 # firefox-java
 Firefox with Java plugin
 
-<h2>Instructions</h2>
-Download the repository files and execute the <b>run.sh</b> script. The script will create the docker image and start firefox container.
+## Instructions
+Download the repository files and execute the `run.sh` script. The script will create the docker image and start firefox container.
 
-Feel free to customize firefox, all config settings and donwloaded files are persisted. They are stored in the host machine at <b>~/firefox-java</b> directory.
+Feel free to customize firefox, all config settings and donwloaded files are persisted. They are stored on the host machine, in `~/firefox-java` directory.
+
+While the container is running, you can access the Java Control Panel running:
+```
+docker exec -it CONTAINER-ID jcontrol
+```
+
+Enjoy! :sunglasses:
