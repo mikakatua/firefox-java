@@ -13,6 +13,7 @@ launch() {
   --net host \
   --env="DISPLAY" \
   --mount type=bind,source="$base_dir",target=/firefox \
+  --mount type=bind,source="$HOME/.Xauthority",target=/firefox/.Xauthority \
   --mount type=bind,source=/tmp/.X11-unix,target=/tmp/.X11-unix \
   --mount type=bind,source=/dev/shm,target=/dev/shm \
   --mount type=bind,source=/etc/fonts,target=/etc/fonts \
